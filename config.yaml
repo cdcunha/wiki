@@ -2,7 +2,7 @@
 # Configuration sample file for Jingo (YAML)
 application:
   title: Jingo
-  repository: 'git://github.com/cdcunha/wiki.git'
+  repository: 'https://github.com/cdcunha/wiki.git'
   docSubdir: ''
   remote: 'wiki'
   pushInterval: 30
