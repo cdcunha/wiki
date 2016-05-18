@@ -1,3 +1,19 @@
+Regras
+- Usuário Master (senha à definir) já estará casdastrado no banco e poderá: acessar o sistema e cadastrar os outros usuários.
+- O(s) usuário(s) supervisor(es) irá aprovar ou não as ações pendentes dos usuários comuns
+- Haverá um histórico das alterações, gerado automaticamente pelo sistema
+- O usuário só deverá se autenticar se quiser alterar algum artigo
+- Haverá opção para conversa (chat) em sala ou privada
+
+
+Wiki in node
+*** https://github.com/claudioc/jingo (using git with decent design). Demo: http://jingo.cica.li:6067/wiki/home ***
+https://github.com/hiddentao/melkor (using git) Demo: http://melkor-demo.hiddentao.com/
+https://github.com/nhoss2/nodewiki (using text file)
+
+Introducing The Great Wiki Challenge
+https://web.archive.org/web/20120127043634/http://nodebits.org/wiki-challenge
+
 *** RESTful API User Authentication with Node.js and AngularJS – Part 1/2: Server ***
 https://devdactic.com/restful-api-user-authentication-1/
 
