@@ -1,27 +1,29 @@
 {
-  "name": "chat",
-  "version": "0.0.1",
-  "description": "node.js/socket.io chat app",
-  "main": "server.js",
-  "dependencies": {
-    "ejs": "~0.8.5",
-    "express": "~3.4.8",
-    "underscore": "~1.5.2",
-    "bower": "~1.2.8"
-  },
-  "devDependencies": {},
+  "name": "wiki",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+	"express-session": "^1.10.1",
+    "morgan": "~1.6.1",
+	"mongoose": "^4.4.1",
+	"passport": "^0.2.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^1.0.0",
+    "serve-favicon": "~2.3.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/satrapade/advanced-chat.git"
+    "url": "https://github.com/cdcunha/wiki.git"
   },
-  "author": "Tamas Piros",
-  "url": "http://tamas.io",
-  "email": "me@tamas.io",
-  "license": "free",
-  "bugs": {
-    "url": "https://github.com/satrapade/advanced-chat/issues"
-  },
-  "homepage": "https://github.com/satrapade/advanced-chat"
+  "author": "Charlestown Cunha",
+  "email": "cdcunha@gmail.com",
+  "license": "MIT"
 }
