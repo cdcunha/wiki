@@ -8,11 +8,13 @@ var app = require('../app');
 var debug = require('debug')('wiki:server');
 var http = require('http');
 
+var os = require('os');
+
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '3030');
 app.set('port', port);
 
 /**
@@ -87,4 +89,16 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  
+  var ipAddrs = '';
+  var interfaces = os.networkInterfaces();
+  for(name in interfaces) {
+    var interface = interfaces[name];
+    interface.forEach(function(entry) {
+      if(entry.family === 'IPv4') {
+        ipAddrs += ipAddrs === '' ? entry.address : ', ' + entry.address;
+      }
+    });
+  }
+  console.log('Listening on IP adresses (at Port ' + addr.port + '):\n' + ipAddrs);
 }
